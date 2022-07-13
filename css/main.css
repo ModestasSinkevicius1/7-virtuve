@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.heatplate{
+    display: grid;
+    border: 2px solid black;
+    margin: 10px;
+    width: 384px;
+    float: left;
+}
+
+.top{
+    display: inline-block;
+    padding: 20px;
+}
+
+.top > .circle{
+    float: left;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #999;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.bottom > .switch{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.kaitlente > .bottom > .switch::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
